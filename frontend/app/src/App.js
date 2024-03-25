@@ -85,6 +85,13 @@ const App = () => {
     <div>
       <nav className="navbar">
         <div className="nav-logo">ArkHIVE</div>
+        <input
+        type="text"
+        placeholder="Search for a movie..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="search-box"
+      />
         <div className="nav-tabs">
           <div
             className={`nav-tab ${activeTab === 'search' ? 'active' : ''}`}
@@ -118,13 +125,7 @@ const App = () => {
           </div>
         </div>
       </nav>
-      <input
-        type="text"
-        placeholder="Search for a movie..."
-        value={searchTerm}
-        onChange={handleSearchChange}
-        className="search-box"
-      />
+      
       <div className="app-container">
         {selectedMovie && (
           <MovieDetail

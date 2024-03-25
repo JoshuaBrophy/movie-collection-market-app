@@ -142,11 +142,11 @@ input[type="checkbox"] {
 
 /* Search bar styles */
 .search-bar {
-  margin-left: auto; /* Push the search bar to the right */
+  margin-left: 50px; /* Push the search bar to the right */
 }
 
 .search-bar input[type="text"] {
-  padding: 8px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 10px;
   border: none;
 }
