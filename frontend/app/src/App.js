@@ -93,6 +93,12 @@ const App = () => {
             Home
           </div>
           <div
+            className={`nav-tab ${activeTab === 'Log-in' ? 'active' : ''}`}
+            onClick={() => handleTabChange('Log-in')}
+          >
+            Log-in
+          </div>
+          <div
             className={`nav-tab ${activeTab === 'collection' ? 'active' : ''}`}
             onClick={() => handleTabChange('collection')}
           >
